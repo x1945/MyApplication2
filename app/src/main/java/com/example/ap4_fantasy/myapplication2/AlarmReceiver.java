@@ -11,7 +11,7 @@ public class AlarmReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
-        Toast.makeText(context, "定時任務已經執行了", Toast.LENGTH_SHORT).show();
+        Toast.makeText(context, "定時任務已經執行了!!", Toast.LENGTH_SHORT).show();
         Intent workIntent = new Intent(context, LongRunningService.class);
         workIntent.putExtra("type", "work");
         context.startService(workIntent);
