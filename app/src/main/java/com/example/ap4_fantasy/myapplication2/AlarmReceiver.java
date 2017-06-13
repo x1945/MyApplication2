@@ -15,5 +15,6 @@ public class AlarmReceiver extends BroadcastReceiver {
         Intent workIntent = new Intent(context, LongRunningService.class);
         workIntent.putExtra("type", "work");
         context.startService(workIntent);
+
     }
 }
